@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}" media="screen">
+    <title class="Cadastro">Cadastro</title>
+</head>
+<body>
+    <form action="{{ url_for('teste') }}" method="post" class="form">
+        <label class="texto"><strong>LOGIN</strong></label>
+        <input class="entrada" type="text" id="form_login" name="login" placeholder="Login">
+        <label class="texto"><strong>NOME COMPLETO</strong></label>
+        <input class="entrada" type="text" id="form_nome" name="nome" placeholder="Nome completo">
+        <label class="texto"><strong>SENHA</strong></label>
+        <input class="entrada" type="password" id="form_senha" name="senha" placeholder="Senha"><br>
+        <button class="botao" type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
